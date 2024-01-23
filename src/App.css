@@ -1,12 +1,7 @@
 .outer-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70vw;
-  height: 2vh;
+  width: 300px;
+  height: 20px;
   border: 1px solid black;
-}
-
-.inner-conatiner{
-
+  margin: 20px;
+  overflow: hidden;
 }
