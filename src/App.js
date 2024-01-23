@@ -7,15 +7,13 @@ function App() {
       <header className="">
         <h2>This a progress bar</h2>
       </header>
-      <body>
         <section>
-          <div className="container">
-            <div className>
+          <div className="outer-container">
+            <div className="inner-conatiner">
               
             </div>
           </div>
         </section>
-      </body>
     </div>
   );
 }
