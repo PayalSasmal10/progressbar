@@ -3,13 +3,13 @@ import {useEffect, useState} from "react";
 
 function App() {
   const [initBar, setInitBar] = useState(0);
-  useEffect(()=>{
-    const timerId = setInterval(() => {
-      setInitBar((prvBar) => prvBar < 100? prvBar+5: 100);
+  
+   const progressBarStartButtonHandler = () => {
+    const timerID = setInterval(() => {
+      setInitBar((prvBar) => prvBar < 100? prvBar+10: 100);
     }, 2000);
-
-    return () => clearInterval(timerId);
-  },[]);
+    return () => clearInterval(timerID);
+   };
 
   const styleProgressBar = {
     width: initBar + "%",
@@ -26,7 +26,7 @@ function App() {
           <div className="outer-container">
            <div style={styleProgressBar}>{initBar}%</div>
           </div>
-          <button>Start</button>
+          <button onClick={progressBarStartButtonHandler}>Start</button>
         </section>
     </div>
   );
