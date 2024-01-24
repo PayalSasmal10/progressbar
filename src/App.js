@@ -11,11 +11,6 @@ function App() {
     return () => clearInterval(timerId);
   },[]);
 
-  const sty = {
-    width: initBar + "%",
-    height: "100%",
-    backgroundColor: "green"
-  }
 
   return (
     <div className="App">
@@ -26,6 +21,7 @@ function App() {
           <div className="outer-container">
            <div style={sty}>{initBar}%</div>
           </div>
+          <button>Start</button>
         </section>
     </div>
   );
