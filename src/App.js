@@ -11,6 +11,11 @@ function App() {
     return () => clearInterval(timerId);
   },[]);
 
+  const styleProgressBar = {
+    width: initBar + "%",
+    height: "100%",
+    backgroundColor: "green",
+  };
 
   return (
     <div className="App">
@@ -19,7 +24,7 @@ function App() {
       </header>
         <section>
           <div className="outer-container">
-           <div style={sty}>{initBar}%</div>
+           <div style={styleProgressBar}>{initBar}%</div>
           </div>
           <button>Start</button>
         </section>
